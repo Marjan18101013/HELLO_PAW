@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>this is our service list</h2>
+<table border="1">
+  <tr>
+    <th>
+       Service_Name
+    </th>
+    <th>
+       Cost
+    </th>
+    <th>
+       Service_type
+    </th>
+
+  </tr>
+     {% for n in all_service %}
+
+           <tr>
+               <td>
+                  {{ n.s_Name}}
+               </td>
+                <td>
+                  {{ n.s_Cost}}
+                </td>
+                <td>
+                  {{ n.s_type }}
+                </td>
+
+           </tr>
+
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
